@@ -10,7 +10,7 @@ import com.cabudev.horoscapp.databinding.FragmentPalmistryBinding
 
 class PalmistryFragment : Fragment() {
     private var _binding:FragmentPalmistryBinding?=null
-    private val binding = _binding!!
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
